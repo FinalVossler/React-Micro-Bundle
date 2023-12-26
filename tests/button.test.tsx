@@ -8,6 +8,6 @@ describe("Button", () => {
 
     render(<Button label={buttonText} />);
 
-    expect(screen.getByText(buttonText));
+    expect(screen.getByText(buttonText)).toBeInTheDocument();
   });
 });
